@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dlang-study
+dlang-study.so
+dlang-study.dylib
+dlang-study.dll
+dlang-study.a
+dlang-study.lib
+dlang-study-test-*
+*.exe
+*.o
+*.obj
+*.lst
