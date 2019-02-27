@@ -1,6 +1,6 @@
 import std.stdio;
 
 void main() {
-	
-	writeln("Edit source/app.d to start your project.");
+	const hello = "Hello World!";
+	writefln(hello);
 }
