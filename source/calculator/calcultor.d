@@ -27,7 +27,8 @@ void main() {
       return;
 
     default:
-      writefln("Not valid");
+      writefln("Not valid, try again!");
+      main();
       break;
   }
 }
