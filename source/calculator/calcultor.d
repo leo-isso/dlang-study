@@ -3,7 +3,7 @@ import std.stdio, std.conv, std.string;
 
 void main() {
   
-  string choice = selectOption();
+  const string choice = selectOption();
   
   switch (choice){
 
@@ -46,15 +46,15 @@ string selectOption(){
 
 int[] selectValues(){
   writefln("\nFirst value");
-  int a = readln.strip.to!int;
+  const int a = readln.strip.to!int;
   writefln("\nSecond value");
-  int b = readln.strip.to!int;
+  const int b = readln.strip.to!int;
   return [a, b];
 }
 
 int add(){
   int[] values = selectValues();
-  int result = values[0] + values[1];  
+  const int result = values[0] + values[1];  
   writefln("\nResult: %s", result);
   return result;
 }
