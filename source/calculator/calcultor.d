@@ -8,7 +8,7 @@ void main() {
   switch (choice){
 
     case ("1"):
-      writefln("GOOD ONE");
+      add();
       break;
 
     case ("2"):
@@ -42,4 +42,19 @@ string selectOption(){
   writefln("5.  quit \n");
   const choice = readln.strip.to!string;
   return choice;
+}
+
+int[] selectValues(){
+  writefln("\nFirst value");
+  int a = readln.strip.to!int;
+  writefln("\nSecond value");
+  int b = readln.strip.to!int;
+  return [a, b];
+}
+
+int add(){
+  int[] values = selectValues();
+  int result = values[0] + values[1];  
+  writefln("\nResult: %s", result);
+  return result;
 }
